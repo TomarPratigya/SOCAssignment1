@@ -1,0 +1,29 @@
+<html>
+<head>
+
+<title>Re-sizeable Window</title>
+<script type="text/javascript">
+function display(){
+document.getElementById("urlDisplay").src= document.getElementById("urlSource").value;
+
+}
+setWidth(){
+document.getElementById("iframe1").width = document.getElementById("width").value;
+}
+setHeight(){
+document.getElementById("iframe1").height = document.getElementById("height").value;
+}
+</script>
+</head>
+<body>
+
+URL<input type="text" name="urlSource" id="urlSource"><br><br>
+<input type="button" name="b1" value="GO!" onclick="display()"><br><br>
+width<input type="text" id="width">
+<input type="button" value="Set width" onclick="setWidth()"><br>
+height<input type="text" id="height">
+<input type="button" value="Set height" onclick="setHeight()">
+<p><iframe src="test.html" name="urlDisplay" id="iframe1" ></iframe></p>
+
+</body>
+</html>

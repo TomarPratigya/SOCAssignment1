@@ -1,0 +1,19 @@
+<html>
+<head>
+
+<title>Browser-Modifiable Window</title>
+<script type="text/javascript">
+function display(){
+document.getElementById("urlDisplay").src= document.getElementById("urlSource").value;
+
+}
+</script>
+</head>
+<body>
+
+URL<input type="text" name="urlSource" id="urlSource"><br><br>
+<input type="button" name="b1" value="GO!" onclick="display()">
+
+<p><iframe src="test.html" id="urlDisplay" height="200" width="300"></iframe></p>
+</body>
+</html>
